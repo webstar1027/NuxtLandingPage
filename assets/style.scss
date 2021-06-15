@@ -1,0 +1,320 @@
+@import '~bulma/sass/utilities/_all.sass';
+@import 'animations.scss';
+
+.flex-row {
+  display: flex;
+  &.flex-reverse {
+    flex-direction: row-reverse;
+  }
+  &:not(.flex-reverse) {
+    flex-direction: row;
+  }
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  &.flex-reverse {
+    flex-direction: column-reverse;
+  }
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-between {
+  justify-content: space-between;
+}
+.align-around {
+  justify-content: space-around;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.filler {
+  flex-grow: 1;
+}
+
+.standard-p {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: Montserrat, sans-serif;
+  
+}
+
+// .m5, .m10...
+@for $i from 1 through 40 {
+  .m#{$i * 5} {
+    margin: $i * 5px
+  }
+}
+// .m5-left, .m10-left...
+@for $i from 1 through 20 {
+  .m#{$i * 5}#{-left} {
+    margin-left: $i * 5px
+  }
+}
+@for $i from 1 through 20 {
+  .flex-#{$i * 1} {
+    flex-grow: $i * 1
+  }
+}
+// .p5-side, .p10-side...
+@for $i from 1 through 20 {
+  .p#{$i * 5}#{-side} {
+    padding-left: $i * 5px;
+    padding-right: $i * 5px;
+  }
+}
+// .p5-left, .p10-left...
+@for $i from 1 through 40 {
+  .p#{$i * 5}#{-left} {
+    padding-left: $i * 5px
+  }
+}
+// .p5-right, .p10-right...
+@for $i from 1 through 40 {
+  .p#{$i * 5}#{-right} {
+    padding-right: $i * 5px
+  }
+}
+// .p5-top, .p10-top...
+@for $i from 1 through 20 {
+  .p#{$i * 5}#{-top} {
+    padding-top: $i * 5px
+  }
+}
+// .p5-bot, .p10-bot...
+@for $i from 1 through 70 {
+  .p#{$i * 5}#{-bot} {
+    padding-bottom: $i * 5px;
+  }
+}
+// .p5-ver, .p10-ver...
+@for $i from 1 through 20 {
+  .p#{$i * 5}#{-ver} {
+    padding-top: $i * 5px;
+    padding-bottom: $i * 5px;
+  }
+}
+// .p5, .p10...
+@for $i from 1 through 20 {
+  .p#{$i * 5} {
+    padding: $i * 5px
+  }
+}
+// .w5, .w10...
+@for $i from 1 through 60 {
+  .w#{$i * 5} {
+    width: $i * 5%;
+    max-width: $i * 5%;
+  }
+}
+.w-third {
+  width: 33%;
+}
+.h-third {
+  height: 33%;
+}
+// .h5, .h10...
+@for $i from 1 through 10 {
+  .h#{$i * 10} {
+    height: $i * 10%
+  }
+}
+// .fs1, fs7
+@for $i from 1 through 100 {
+  .fs#{$i} {
+    font-size: $i * 1px
+  }
+}
+
+.fluid {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-dark {
+  color: #42375b !important;
+}
+
+.text-alt {
+  color: #d84166 !important;
+}
+
+.text-green {
+  color: #00d857 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-dark {
+  background-color: #42375b !important;
+}
+
+.bg-light {
+  background-color: #f5fcf8 !important;
+}
+
+.bg-green {
+  background-color: #00d857 !important;
+}
+
+.bg-greenish {
+  background-color: #f1f8e7 !important;
+}
+
+.bg-alt {
+  background-color: #d84166 !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+.fit {
+  width: 100%;
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.flat-input {
+  border: none;
+  outline: 1.5px solid #dfeee5;
+}
+.flat-input:focus {
+  border: none;
+  outline-color: #00d857;
+}
+
+.line-small {
+  line-height: 0.8;
+}
+
+.line-medium {
+  line-height: 1.2;
+}
+
+.line-large {
+  line-height: 1.6;
+}
+
+.line-xlarge {
+  line-height: 2;
+}
+
+.lspacing-2 {
+  letter-spacing: 2px;
+}
+
+.scrollbar {
+  border-radius: 0px !important;
+  width: 1em !important;
+  background: #00d857 !important;
+  z-index: 9998;
+  cursor: pointer;
+  
+  @media only screen and (min-width: 768px) {
+    opacity: 1 !important;
+  }
+
+  &.scrollbar-x {
+    display: none !important;
+  }
+}
+
+.scrollbar-wrap .scrollbar-y {
+  right: 0px !important;
+  @media only screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+.scrollbar-content {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  max-height: 100vh;
+  
+  @media only screen and (min-width: 768px) {
+    padding-right: 1em !important;
+    max-width: 100% !important;
+    max-height: 100vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .noSidePaddingMobile {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@import '~bulma';

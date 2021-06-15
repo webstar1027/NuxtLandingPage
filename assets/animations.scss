@@ -1,0 +1,192 @@
+@import './animations/keyframes.scss';
+
+.fade-in-left {
+    &.active {
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -o-animation-duration:0.7s;
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+}
+
+.fade-in-down {
+    &.active {
+        -webkit-animation-name: fadeInDown;
+        -moz-animation-name: fadeInDown;
+        -o-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -o-animation-duration:0.7s;
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+}
+
+
+.fade-in-left-long {
+    &.active {
+        -webkit-animation-name: fadeInLeftLong;
+        -moz-animation-name: fadeInLeftLong;
+        -o-animation-name: fadeInLeftLong;
+        animation-name: fadeInLeftLong;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -o-animation-duration:0.7s;
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+}
+
+.fade-in-up {
+    &.active {
+        -webkit-animation-name: fadeInUp;
+        -moz-animation-name: fadeInUp;
+        -o-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -o-animation-duration:0.7s;
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+}
+
+.diagonal-in-up {
+    &.active {
+        -webkit-animation-name: diagonalInUp;
+        -moz-animation-name: diagonalInUp;
+        -o-animation-name: diagonalInUp;
+        animation-name: diagonalInUp;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -o-animation-duration:0.7s;
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+}
+
+.diagonal-in-up-mid {
+    &.active {
+        -webkit-animation-name: diagonalInUpShortMid;
+        -moz-animation-name: diagonalInUpShortMid;
+        -o-animation-name: diagonalInUpShortMid;
+        animation-name: diagonalInUpShortMid;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -o-animation-duration:0.7s;
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+}
+
+.diagonal-in-up-short {
+    &.active {
+        -webkit-animation-name: diagonalInUpShort;
+        -moz-animation-name: diagonalInUpShort;
+        -o-animation-name: diagonalInUpShort;
+        animation-name: diagonalInUpShort;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -o-animation-duration:0.7s;
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+}
+
+.fade-in {
+    &.active {
+        -webkit-animation-name: fadeIn;
+        -moz-animation-name: fadeIn;
+        -o-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -o-animation-duration:0.7s;
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+}
+
+
+.slide-in-down {
+    &.active {
+        -webkit-animation-name: slideInDown;
+        -moz-animation-name: slideInDown;
+        -o-animation-name: slideInDown;
+        animation-name: slideInDown;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.3s;
+        -moz-animation-duration: 0.3s;
+        -o-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -o-animation-duration:0.3s;
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+}

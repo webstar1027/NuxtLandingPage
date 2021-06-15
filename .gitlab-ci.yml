@@ -1,0 +1,14 @@
+stages:
+  - stage
+
+deploy:
+  stage: stage
+  only:
+    - develop
+  script:
+    - which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -H 206.189.29.149 >> ~/.ssh/known_hosts
+    - ssh -o StrictHostKeyChecking=no root@206.189.29.149 "cd /var/www/stage.crewnew.com && git stash && git pull && npm install && npm run buildStage && pm2 delete all && pm2 start pm2-conf-stage.json --name CrewNewStage && cd /var/www/crewnew.com && pm2 start npm --name CrewNewTemp -- start" 

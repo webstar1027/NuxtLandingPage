@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "CrewNewStage",
+            "script": "npm",
+            "args" : "run startStage"
+        }
+    ]
+}
